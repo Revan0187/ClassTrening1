@@ -1,0 +1,52 @@
+//#include <iostream>
+//#include <stdlib.h>
+//#include <string>
+//using namespace std;
+//
+//int main()
+//{
+//	setlocale(LC_ALL, "rus");
+//	const int size1 = 10;
+//	const int size2 = 2;
+//
+//	string ArProduct[size1] = { "Орехи", "Колбаса", "Пиво", "Хлеб", "Майонез", "Картофель", "Сигареты", "Сыр", "Спички", "Кукуруза" };
+//	double ArCena[size1] = { 125.25, 84.40, 37.50, 24.92, 17.65, 23.45, 83.20, 75.65, 29.19, 12.54, };
+//	string ArEdinicaIzm[size2] = { "кг", "шт", };
+//	cout << "Прайс-лист товаров:" << endl << endl;
+//	for (int i = 0; i < size1; i++)
+//	{
+//		cout << i << "  " << ArProduct[i] << "    " << ArCena[i] << "  " << "руб" << endl << endl;
+//	}
+//	cout << endl << endl;
+//	do
+//	{
+//		cout << "Введите номер товара:   ";
+//		cin << 
+//	}
+//	return 0;
+//}
+
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+using namespace std;
+int main()
+{
+	int i, j;
+	const int size = 12;
+	char Ar[] = "Hello people";
+	char temp;
+	for (int i = 0; i < sizeof(Ar); i++)
+	{
+		cout << i << "  " << Ar[i] << endl;
+	}
+	for (i = 0; j < sizeof(Ar) - 2, i <= j; i++, j--)
+	{
+		temp = Ar[i];
+		Ar[i] = Ar[j];
+		Ar[j] = temp;
+	}
+	cout << Ar;
+	
+	return 0;
+}
