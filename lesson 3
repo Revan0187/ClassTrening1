@@ -1,0 +1,35 @@
+{souce.cpp}
+
+#include <iostream>
+using namespace std;
+#include "add.h"
+
+
+int main()
+{
+	cout << "summa  3 & 5 =  " << add(3, 5) << endl << endl;
+	cout << "raznica 5 & 3 =  " << del(3, 5) << endl << endl;
+	system("pause");
+	return 0;
+}
+
+{add.cpp}
+
+int add(int x, int y)
+{
+	return x + y;
+}
+
+int del(int x, int y)
+{
+	return y - x;
+}
+
+{add.h}
+
+#ifndef ADD_H
+#define ADD_H
+
+int add(int, int);
+int del(int, int);
+#endif
