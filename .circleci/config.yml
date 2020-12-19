@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	//setlocale(LC_ALL, "rus");
+	//int x_begin = {}, y_begin = {}, x_end = {}, y_end = {};                 // ладья
+	//cout << "input x_begin and y_begin:\n";
+	//cin >> x_begin >> y_begin;
+	//cout << "input x_end and y_end:\n";
+	//cin >> x_end >> y_end;
+	//if ((y_end == y_begin) || (x_begin == x_end))
+	//{
+	//	cout << "Ладья бьёт фигуру!\n\n";
+	//}
+	//else
+	//{
+	//	cout << "Ладья не бьёт фигуру!\n\n";
+	//}
+
+
+	//int x_slon = {}, y_slon = {}, x_f = {}, y_f = {};               // слон
+	//cout << "input x_slon and y_slon:\n";
+	//cin >> x_slon >> x_slon;
+	//cout << "input x_f and y_f";
+	//cin >> x_f >> y_f;
+	//if ((abs(x_slon - x_f)) == (abs(y_slon - y_f)))
+	//{
+	//	cout << "слон бьёт фигуру!\n\n";
+	//}
+	//else
+	//{
+	//	cout << "слон не бьёт фигуру!\n\n";
+	//}
+
+
+
+
+	//if(x_ferz == y_ferz)
+	//return 0;
+
+
+
+	int x = {}, y = {}, z = {}, max;
+	cin >> x >> y >> z;
+	max = (x > y) ? x : y;
+	max = (max > z) ? max : z;
+	cout << max;
+	return 0;
+}
